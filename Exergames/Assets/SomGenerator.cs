@@ -5,16 +5,21 @@ using UnityEngine.UI;
 
 public class SomGenerator : MonoBehaviour
 {
+    public List<float> answers = new List<float>();
+    public List<char> soms = new List<char>();
+
     public Text somText;
     public Text answer1;
     public Text answer2;
     public Text answer3;
-    public List<float> answers = new List<float>();
-    public List<char> soms = new List<char>();
+ 
     public Button btnAnswer1;
     public Button btnAnswer2;
     public Button btnAnswer3;
+
     float correct = 0;
+    bool answerCorrect = false;
+    float time = 30;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +38,12 @@ public class SomGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (answerCorrect || TimerElapsed()) 
+        {
+            time = 30;
+            GenerateSom(); 
+        }
+        Debug.Log(time);
     }
 
     void GenerateSom()
@@ -129,6 +139,13 @@ public class SomGenerator : MonoBehaviour
         else {
             Debug.Log("Wrong");
         }
-       
+    }
+
+    bool TimerElapsed()
+    {
+        if (time < 0) { return true; }
+        time -= Time.deltaTime;
+        
+        return false;
     }
 }
