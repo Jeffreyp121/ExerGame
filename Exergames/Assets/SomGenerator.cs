@@ -41,6 +41,7 @@ public class SomGenerator : MonoBehaviour
         if (answerCorrect || TimerElapsed()) 
         {
             time = 30;
+            answerCorrect = false;
             GenerateSom(); 
         }
         Debug.Log(time);
@@ -65,6 +66,12 @@ public class SomGenerator : MonoBehaviour
             case '-':
                 x = Random.Range(100, 1000);
                 y = Random.Range(100, 1000);
+                if(x< y)
+                {
+                    float t = y;
+                    x = y;
+                    y = t;
+                }
                 correct = x - y;
                 break;
             case '*':
@@ -73,11 +80,11 @@ public class SomGenerator : MonoBehaviour
                 correct = x * y;
                 break;
 
-            case ':':
+            /*case ':':
                 x = Random.Range(1, 10);
                 y = Random.Range(1, 10);
                 correct = x / y;
-                break;
+                break;*/
 
             default:
                 break;
@@ -91,13 +98,13 @@ public class SomGenerator : MonoBehaviour
         answers.Add(wrong1);
         answers.Add(wrong2);
 
-        i = Random.Range(0, answers.Count - 1);
+        i = Random.Range(0, answers.Count);
         answer1.text = $"{answers[(int)i]}";
         answers.RemoveAt((int)i);
-        i = Random.Range(0, answers.Count - 1);
+        i = Random.Range(0, answers.Count);
         answer2.text = $"{answers[(int)i] }";
         answers.RemoveAt((int)i);
-        i = Random.Range(0, answers.Count - 1);
+        i = Random.Range(0, answers.Count);
         answer3.text = $"{answers[(int)i] }";
         answers.RemoveAt((int)i);
     }
@@ -107,7 +114,7 @@ public class SomGenerator : MonoBehaviour
         soms.Add('+');
         soms.Add('-');
         soms.Add('*');
-        soms.Add(':');
+        //soms.Add(':');
     }
 
 
@@ -135,6 +142,7 @@ public class SomGenerator : MonoBehaviour
         if (correct == float.Parse(text))
         {
             Debug.Log("Good Job!");
+            answerCorrect = true;
         }
         else {
             Debug.Log("Wrong");
@@ -145,7 +153,6 @@ public class SomGenerator : MonoBehaviour
     {
         if (time < 0) { return true; }
         time -= Time.deltaTime;
-        
         return false;
     }
 }
