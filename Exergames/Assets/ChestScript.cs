@@ -19,8 +19,8 @@ public class ChestScript : MonoBehaviour
         {
             anim.Play("ChestAnimation");
             Destroy(gameObject, 1f);
-            while(!Timer())
-            SceneManager.LoadScene("RekenScene");
+
+           // SceneManager.LoadScene("Menu");
         }
     }
 

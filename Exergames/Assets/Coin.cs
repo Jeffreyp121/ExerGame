@@ -10,7 +10,8 @@ public class Coin : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            ScoreManager.instance.ChangeScore(coinValue);
+            Destroy(gameObject);
+            ScoreManager.instance2.ChangeScore(coinValue);
         }
     }
 }
