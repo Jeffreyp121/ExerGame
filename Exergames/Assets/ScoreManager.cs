@@ -5,16 +5,16 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
-    public static ScoreManager instance;
+    public static ScoreManager instance2;
     public TextMeshProUGUI text;
-    int score;
+    int score = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        if(instance == null)
+        if(instance2 == null)
         {
-            instance = this;
+            instance2 = this;
         }
     }
 
