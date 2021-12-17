@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SomGenerator : MonoBehaviour
 {
@@ -17,9 +18,10 @@ public class SomGenerator : MonoBehaviour
     public Button btnAnswer2;
     public Button btnAnswer3;
 
+    int nrCorrect = 0;
     float correct = 0;
     bool answerCorrect = false;
-    float time = 30;
+    float time = 6;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,13 +40,19 @@ public class SomGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(nrCorrect == 5)
+        {
+            SceneManager.LoadScene("Menu");
+        }
         if (answerCorrect || TimerElapsed()) 
         {
-            time = 30;
+            time = 6;
             answerCorrect = false;
             GenerateSom(); 
         }
         Debug.Log(time);
+        
+        
     }
 
     void GenerateSom()
@@ -143,6 +151,7 @@ public class SomGenerator : MonoBehaviour
         {
             Debug.Log("Good Job!");
             answerCorrect = true;
+            nrCorrect++;
         }
         else {
             Debug.Log("Wrong");
