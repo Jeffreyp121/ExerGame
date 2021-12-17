@@ -404,6 +404,7 @@ GameObject:
   - component: {fileID: 411956253}
   - component: {fileID: 411956252}
   - component: {fileID: 411956251}
+  - component: {fileID: 411956255}
   m_Layer: 5
   m_Name: Gemiddeld
   m_TagString: Untagged
@@ -487,7 +488,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 411956251}
+      - m_Target: {fileID: 411956255}
         m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
         m_MethodName: Level2
         m_Mode: 1
@@ -537,6 +538,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411956249}
   m_CullTransparentMesh: 1
+--- !u!114 &411956255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411956249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf46261c63ab081499ba9f6834e3befe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &547754450
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,6 +1032,7 @@ GameObject:
   - component: {fileID: 1683716774}
   - component: {fileID: 1683716773}
   - component: {fileID: 1683716772}
+  - component: {fileID: 1683716776}
   m_Layer: 5
   m_Name: Moeilijk
   m_TagString: Untagged
@@ -1102,7 +1116,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1683716772}
+      - m_Target: {fileID: 1683716776}
         m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
         m_MethodName: Level3
         m_Mode: 1
@@ -1152,6 +1166,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683716770}
   m_CullTransparentMesh: 1
+--- !u!114 &1683716776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683716770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf46261c63ab081499ba9f6834e3befe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1949128873
 GameObject:
   m_ObjectHideFlags: 0

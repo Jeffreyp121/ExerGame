@@ -14,6 +14,6 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadNextLevel()
     {
-    SceneManager.LoadScene("Menu");
+    SceneManager.LoadScene("RekenScene");
     }
 }
