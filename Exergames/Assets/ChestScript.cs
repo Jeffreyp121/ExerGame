@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class ChestScript : MonoBehaviour
 {
     private Animator anim;
-    // Start is called before the first frame update
+    private float time = 1;
+        // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -18,8 +19,15 @@ public class ChestScript : MonoBehaviour
         {
             anim.Play("ChestAnimation");
             Destroy(gameObject, 1f);
-
-            SceneManager.LoadScene("Menu");
+            while(!Timer())
+            SceneManager.LoadScene("RekenScene");
         }
+    }
+
+    bool Timer()
+    {
+        if(time< 0) { return true; }
+        time -= Time.deltaTime;
+        return false;
     }
 }
