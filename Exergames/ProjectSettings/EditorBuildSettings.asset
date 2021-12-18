@@ -6,11 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: ec665c37fb6824c4182f721bd846f1c2
+    path: Assets/Scenes/MenuNew.unity
+    guid: 5393d60f37758b94d9ee45ff6b749d61
   - enabled: 1
+<<<<<<< Updated upstream
     path: Assets/Scenes/LevelSelect.unity
     guid: 322e2b9809e9f6f48a6481ba5d278670
+=======
+    path: Assets/Scenes/LevelKeuze.unity
+    guid: 7517cbbacf371aa46abe225ade05b830
+>>>>>>> Stashed changes
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
