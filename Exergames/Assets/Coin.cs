@@ -5,6 +5,7 @@ using UnityEngine;
 public class Coin : MonoBehaviour
 {
     public int coinValue = 1;
+    public AudioSource audioSource;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -12,6 +13,7 @@ public class Coin : MonoBehaviour
         {
             Destroy(gameObject);
             ScoreManager.instance2.ChangeScore(coinValue);
+            audioSource.Play();
         }
     }
 }

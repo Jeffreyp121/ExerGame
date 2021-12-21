@@ -26,9 +26,15 @@ public class SomGenerator : MonoBehaviour
     int nrCorrect = 0;
     float correct = 0;
     bool answerCorrect = false;
-    public float time = 6;
+
+    float time = 0;
+    float startTime = 7; //Tijd voor een som
 
     public Image healthBar;
+    public AudioSource timer;
+    public AudioSource boem;
+    public AudioSource fout;
+    public AudioSource goed;
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +47,9 @@ public class SomGenerator : MonoBehaviour
 
         Button btn3 = btnAnswer3.GetComponent<Button>();
         btn3.onClick.AddListener(TaskOnClick3);
+        time = startTime;
         GenerateSom();
+
     }
 
     // Update is called once per frame
@@ -55,9 +63,14 @@ public class SomGenerator : MonoBehaviour
         }
         if (answerCorrect || TimerElapsed()) 
         {
-            time = 6;
+            if (!answerCorrect)
+            {
+                boem.Play();
+            }
+            time = startTime;
             answerCorrect = false;
-            GenerateSom(); 
+            GenerateSom();
+            timer.Play();
         }
         Debug.Log(time);
     }
@@ -120,9 +133,11 @@ public class SomGenerator : MonoBehaviour
             Debug.Log("Good Job!");
             answerCorrect = true;
             nrCorrect++;
+            goed.Play();
         }
         else {
             Debug.Log("Wrong");
+            fout.Play();
         }
     }
 
@@ -135,6 +150,6 @@ public class SomGenerator : MonoBehaviour
 
     void UpdateHealthBar()
     {
-        healthBar.fillAmount = Mathf.Clamp(time / 6, 0, 1f);
+        healthBar.fillAmount = Mathf.Clamp(time / startTime, 0, 1f);
     }
 }

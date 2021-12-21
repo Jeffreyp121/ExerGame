@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 679, y: 342}
-  m_MaxSize: {x: 12004, y: 8042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 18587
+  controlID: 76
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,10 +144,10 @@ MonoBehaviour:
     y: 0
     width: 1466
     height: 947
-  m_MinSize: {x: 403, y: 342}
-  m_MaxSize: {x: 8003, y: 8042}
+  m_MinSize: {x: 403, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 18588
+  controlID: 77
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 18589
+  controlID: 78
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -246,14 +246,14 @@ MonoBehaviour:
     y: 561
     width: 1466
     height: 386
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 17}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -399,7 +399,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 5a4cffffac91ffff8c93ffff0a98ffffb898ffff7099ffffa0a1ffff5aa2ffff64a6ffff3aa7ffffd2aaffff5cc6ffff48fbffff5280000064800000
+      m_ExpandedIDs: ec93ffff5a95ffff1099ffff549affff249bffff289efffff49effff40a2ffff14a4ffffe4b7ffff40b8ffff38baffff7cbaffff52bdffff6cbdffffeebdffff1abeffff5abeffff0cc4ffff5ec9ffffd4caffff92cbffffbad0ffff34d3ffffbcd7ffffb2d8ffff00d9ffff2ad9ffffe2d9ffffc0daffffb6dcffff66e2ffff64f2fffffcf2ffff1af4ffff78f6ffff50f9ffff2cfbffffe0750000ca7b0000e2ad00000cb6000074b6000012b7000094c000009cc200006ac700004ecc0000d2de000072ec0000f8ef000038f30000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -459,9 +459,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 444.31012, y: 226.92792, z: -979.58453}
+    m_Target: {x: 10.75984, y: 3.304017, z: -427.3472}
     speed: 2
-    m_Value: {x: 444.31012, y: 226.92792, z: -979.58453}
+    m_Value: {x: 10.75984, y: 3.304017, z: -427.3472}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -512,9 +512,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 173.2356
+    m_Target: 15.270928
     speed: 2
-    m_Value: 173.2356
+    m_Value: 15.270928
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -602,22 +602,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Menu
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Menu
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\jorian\Documents\GitHub\ExerGame\Exergames
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2a440000
-    m_LastClickedID: 17450
-    m_ExpandedIDs: 000000002a44000000ca9a3b
+    m_SelectedIDs: a24b0000
+    m_LastClickedID: 19362
+    m_ExpandedIDs: 00000000ce44000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -645,7 +645,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002a44000000ca9a3b
+    m_ExpandedIDs: 00000000ce440000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

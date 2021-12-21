@@ -7,7 +7,10 @@ public class ChestScript : MonoBehaviour
 {
     private Animator anim;
     private float time = 1;
-        // Start is called before the first frame update
+    // Start is called before the first frame update
+
+    public AudioSource audioSource;
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -20,7 +23,8 @@ public class ChestScript : MonoBehaviour
             anim.Play("ChestAnimation");
             Destroy(gameObject, 1f);
 
-           // SceneManager.LoadScene("Menu");
+            // SceneManager.LoadScene("Menu");
+            audioSource.Play();
         }
     }
 
