@@ -18,14 +18,21 @@ public class SomGenerator : MonoBehaviour
     public Button btnAnswer2;
     public Button btnAnswer3;
 
+    //Sommen
+    float[] x = { 30, 20 }; //Eerste getal in de som
+    float[] y = { 20, 20 }; //Tweede getal in de som
+    char[] method = { '-', '+' }; //Type som
+
     int nrCorrect = 0;
     float correct = 0;
     bool answerCorrect = false;
-    float time = 6;
+    public float time = 6;
+
+    public Image healthBar;
+
     // Start is called before the first frame update
     void Start()
     {
-        
         Button btn1 = btnAnswer1.GetComponent<Button>();
         btn1.onClick.AddListener(TaskOnClick1);
 
@@ -40,9 +47,11 @@ public class SomGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(nrCorrect == 5)
+        UpdateHealthBar();
+
+        if (nrCorrect == 5)
         {
-            SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene("LevelKeuze");
         }
         if (answerCorrect || TimerElapsed()) 
         {
@@ -51,53 +60,21 @@ public class SomGenerator : MonoBehaviour
             GenerateSom(); 
         }
         Debug.Log(time);
-        
-        
     }
 
     void GenerateSom()
     {
-        SetUpCalculationMethods();
+        int i = Random.Range(0, x.Length); //Random som kiezen
 
-        float i = Random.Range(0, soms.Count - 1);
-        char method = soms[(int)i];
-        float x = 0;
-        float y = 0;
-        switch (method)
+        somText.text = $"{x[i]} {method[i]} {y[i]} =";
+
+        if (method[i] == '-')
         {
-            case '+':
-                x = Random.Range(100, 1000);
-                y = Random.Range(100, 1000);
-                correct = x + y;
-                break;
-
-            case '-':
-                x = Random.Range(100, 1000);
-                y = Random.Range(100, 1000);
-                if(x< y)
-                {
-                    float t = y;
-                    x = y;
-                    y = t;
-                }
-                correct = x - y;
-                break;
-            case '*':
-                x = Random.Range(1, 10);
-                y = Random.Range(1, 10);
-                correct = x * y;
-                break;
-
-            /*case ':':
-                x = Random.Range(1, 10);
-                y = Random.Range(1, 10);
-                correct = x / y;
-                break;*/
-
-            default:
-                break;
+            correct = x[i] - y[i];
+        } else if (method[i]== '+')
+        {
+            correct = x[i] + y[i];
         }
-        somText.text = $"{x} {method} {y} =";
 
         float wrong1 = correct + Random.Range(1, 10);
         float wrong2 = correct - Random.Range(1, 10);
@@ -116,15 +93,6 @@ public class SomGenerator : MonoBehaviour
         answer3.text = $"{answers[(int)i] }";
         answers.RemoveAt((int)i);
     }
-
-    void SetUpCalculationMethods()
-    {
-        soms.Add('+');
-        soms.Add('-');
-        soms.Add('*');
-        //soms.Add(':');
-    }
-
 
     void TaskOnClick1()
     {
@@ -163,5 +131,10 @@ public class SomGenerator : MonoBehaviour
         if (time < 0) { return true; }
         time -= Time.deltaTime;
         return false;
+    }
+
+    void UpdateHealthBar()
+    {
+        healthBar.fillAmount = Mathf.Clamp(time / 6, 0, 1f);
     }
 }
