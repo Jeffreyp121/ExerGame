@@ -3573,6 +3573,7 @@ m_PackageAssets:
         - 6.0.1
         - 6.0.2
         - 7.0.0-pre.3
+        - 7.0.0-pre.4
         compatible:
         - 4.0.3
         - 4.0.4
