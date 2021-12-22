@@ -13,22 +13,33 @@ public class SomGenerator : MonoBehaviour
     public Text answer1;
     public Text answer2;
     public Text answer3;
- 
+
     public Button btnAnswer1;
     public Button btnAnswer2;
     public Button btnAnswer3;
 
     //Sommen
-    float[] x = { 30, 20 }; //Eerste getal in de som
-    float[] y = { 20, 20 }; //Tweede getal in de som
-    char[] method = { '-', '+' }; //Type som
+    float[] xplus = { 98, 168, 170, 60, 205, 303, 224, 456, 444, 599, 672 }; //Eerste getal in de som
+    float[] yplus = { 7, 90, 6, 80, 25, 45, 22, 89, 66, 32, 56 }; //Tweede getal in de som
+
+    float[] xplus_ = { 666, 90, 111, 254, 398, 66, 654, 297, 888, 453, 32 };
+    float[] yplus_ = { 689, 236, 291, 303, 452, 177, 747, 332, 999, 765, 123 };
+
+    float[] xmin = { 105, 232, 444, 756, 378, 32, 849, 654 };
+    float[] ymin = { 33, 45, 87, 132, 54, 11, 47, 91 };
+
+    float[] xmin_ = { 475, 332, 946, 654, 276, 532, 487, 799, 518, 328 };
+    float[] ymin_ = { 402, 287, 728, 589, 177, 501, 432, 688, 466, 267 };
+
+    float[] xkeer = { 5, 4, 7, 6, 3, 8, 3, 9, 5, 6 };
+    float[] ykeer = { 9, 50, 4, 40, 9, 60, 80, 30, 9, 7 };
 
     int nrCorrect = 0;
     float correct = 0;
     bool answerCorrect = false;
 
     float time = 0;
-    float startTime = 7; //Tijd voor een som
+    float startTime = 12; //Tijd voor een som
 
     public Image healthBar;
     public AudioSource timer;
@@ -77,16 +88,33 @@ public class SomGenerator : MonoBehaviour
 
     void GenerateSom()
     {
-        int i = Random.Range(0, x.Length); //Random som kiezen
+        int j = Random.Range(0, 5); //Type som kiezen
 
-        somText.text = $"{x[i]} {method[i]} {y[i]} =";
-
-        if (method[i] == '-')
+        if (j == 0) //Plussom
         {
-            correct = x[i] - y[i];
-        } else if (method[i]== '+')
+            int i = Random.Range(0, xplus.Length); //Random som kiezen
+            correct = xplus[i] + yplus[i];
+            somText.text = $"{xplus[i]} + {yplus[i]} =";
+        } else if (j == 1) //Minsom
         {
-            correct = x[i] + y[i];
+            int i = Random.Range(0, xmin.Length); //Random som kiezen
+            correct = xmin[i] - ymin[i];
+            somText.text = $"{xmin[i]} - {ymin[i]} =";
+        } else if (j == 2) //keersom
+        {
+            int i = Random.Range(0, xkeer.Length); //Random som kiezen
+            correct = xkeer[i] * ykeer[i];
+            somText.text = $"{xkeer[i]} x {ykeer[i]} =";
+        } else if (j == 3) //plussom 2
+        {
+            int i = Random.Range(0, xplus_.Length); //Random som kiezen
+            correct =  yplus_[i] - xplus_[i];
+            somText.text = $"{xplus_[i]} + ..... = {yplus_[i]}";
+        } else if (j == 4) //minsom 2
+        {
+            int i = Random.Range(0, xmin_.Length); //Random som kiezen
+            correct = xmin_[i] - ymin_[i];
+            somText.text = $"{xmin_[i]} - ..... = {ymin_[i]}";
         }
 
         float wrong1 = correct + Random.Range(1, 10);
@@ -96,15 +124,17 @@ public class SomGenerator : MonoBehaviour
         answers.Add(wrong1);
         answers.Add(wrong2);
 
-        i = Random.Range(0, answers.Count);
-        answer1.text = $"{answers[(int)i]}";
-        answers.RemoveAt((int)i);
-        i = Random.Range(0, answers.Count);
-        answer2.text = $"{answers[(int)i] }";
-        answers.RemoveAt((int)i);
-        i = Random.Range(0, answers.Count);
-        answer3.text = $"{answers[(int)i] }";
-        answers.RemoveAt((int)i);
+        int A = 0;
+
+        A = Random.Range(0, answers.Count);
+        answer1.text = $"{answers[(int)A]}";
+        answers.RemoveAt((int)A);
+        A = Random.Range(0, answers.Count);
+        answer2.text = $"{answers[(int)A]}";
+        answers.RemoveAt((int)A);
+        A = Random.Range(0, answers.Count);
+        answer3.text = $"{answers[(int)A]}";
+        answers.RemoveAt((int)A);
     }
 
     void TaskOnClick1()
