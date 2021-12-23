@@ -140,7 +140,11 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
+<<<<<<< Updated upstream
   controlID: 17
+>>>>>>> Stashed changes
+=======
+  controlID: 67
 >>>>>>> Stashed changes
 --- !u!114 &6
 MonoBehaviour:
@@ -177,7 +181,11 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
+<<<<<<< Updated upstream
   controlID: 18
+>>>>>>> Stashed changes
+=======
+  controlID: 68
 >>>>>>> Stashed changes
 --- !u!114 &7
 MonoBehaviour:
@@ -197,6 +205,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     width: 1920
     height: 30
   m_MinSize: {x: 0, y: 0}
@@ -212,6 +221,14 @@ MonoBehaviour:
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
   controlID: 19
+>>>>>>> Stashed changes
+=======
+    width: 1466
+    height: 561
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
+  vertical: 0
+  controlID: 69
 >>>>>>> Stashed changes
 --- !u!114 &8
 MonoBehaviour:
@@ -237,8 +254,13 @@ MonoBehaviour:
   m_MaxSize: {x: 0, y: 0}
 =======
     y: 0
+<<<<<<< Updated upstream
     width: 276
     height: 639
+=======
+    width: 364
+    height: 561
+>>>>>>> Stashed changes
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
@@ -349,11 +371,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 363
     y: 0
+<<<<<<< Updated upstream
     width: 1103
     height: 561
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
+=======
+    width: 454
+    height: 947
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 18}
+>>>>>>> Stashed changes
   m_Panes:
   - {fileID: 15}
   - {fileID: 16}
@@ -638,12 +668,16 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 12500000
       m_LastClickedID: 0
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       m_ExpandedIDs: 06c0ffff6af1ffffd0f6ffff24f7ffff5cf7ffff90f9ffffd8f9ffff80faffff48fbffff86450000984500003e6d0000466d0000586d00005e6d0000666d0000726d0000507200007a720000
 =======
       m_ExpandedIDs: eaf5fdff9af9fdff6801feff1a2afeffcc2dfeff1433feffb058feff88aefeffa6aefeffd2aefefff0aefeff1a0bffff0a0fffff7e47ffff7e6bffff2676ffff888affff3c8bffff7c96ffff62a5ffff9eafffff2eb1ffffb0b1ffff7ec7ffffaeceffffc0edffff48fbffff2e09010076090100dce002006e020500f049050014b406009cb4060096411000de41100066421000b8f81300daf81300e6f8130050fb130074fb13004a041400a20b1400de0b1400e60b1400
+>>>>>>> Stashed changes
+=======
+      m_ExpandedIDs: 38f6ffffa4f7ffff44f8ffffecf8ffff7efaffff48fbffff26790000
 >>>>>>> Stashed changes
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -712,6 +746,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_Target: {x: 0.7625997, y: 0.55428267, z: -5.4519877}
     speed: 2
     m_Value: {x: 0.7625997, y: 0.55428267, z: -5.4519877}
@@ -719,6 +754,11 @@ MonoBehaviour:
     m_Target: {x: 1.670044, y: 0.06658717, z: 471.27402}
     speed: 2
     m_Value: {x: 1.670044, y: 0.06658717, z: 471.27402}
+>>>>>>> Stashed changes
+=======
+    m_Target: {x: -2.9934642, y: 2.11227, z: -536.9608}
+    speed: 2
+    m_Value: {x: -2.9934642, y: 2.11227, z: -536.9608}
 >>>>>>> Stashed changes
   m_RenderMode: 0
   m_CameraMode:
@@ -771,6 +811,7 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_Target: 9.959602
     speed: 2
     m_Value: 9.959602
@@ -778,6 +819,11 @@ MonoBehaviour:
     m_Target: 7.8353715
     speed: 2
     m_Value: 7.8353715
+>>>>>>> Stashed changes
+=======
+    m_Target: 13.311604
+    speed: 2
+    m_Value: 13.311604
 >>>>>>> Stashed changes
   m_Ortho:
     m_Target: 1
@@ -1005,22 +1051,37 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< Updated upstream
     - Assets/Menu
+=======
+    - Assets/BayatGames/Free Platform Game Assets
+>>>>>>> Stashed changes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 68
   m_LastFolders:
+<<<<<<< Updated upstream
   - Assets/Menu
   m_LastFoldersGridSize: 68
+=======
+  - Assets/BayatGames/Free Platform Game Assets
+  m_LastFoldersGridSize: -1
+>>>>>>> Stashed changes
   m_LastProjectPath: C:\Users\jorian\Documents\GitHub\ExerGame\Exergames
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< Updated upstream
     m_SelectedIDs: 20450000
     m_LastClickedID: 17696
     m_ExpandedIDs: 00000000d4440000d6440000d8440000da440000dc440000de440000e0440000e2440000e4440000e6440000e8440000ea440000ec440000ee440000f0440000f2440000f4440000f6440000f8440000fa440000fc440000fe44000000450000024500000445000006450000084500000a4500000c4500000e450000104500001245000014450000164500001845000000ca9a3b
+=======
+    m_SelectedIDs: 06640000
+    m_LastClickedID: 25606
+    m_ExpandedIDs: 00000000de440000e64400000a460000304c0000964c0000ac4c0000e24e0000285100001a530000c4540000ea590000fa5b0000465d0000ea5e000006640000d26500002e670000686a000000ca9a3b
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1048,7 +1109,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< Updated upstream
     m_ExpandedIDs: 00000000d4440000d6440000d8440000da440000dc440000de440000e0440000e2440000e4440000e6440000e8440000ea440000ec440000ee440000f0440000f2440000f4440000f6440000f8440000fa440000fc440000fe44000000450000024500000445000006450000084500000a4500000c4500000e4500001045000012450000144500001645000018450000
+=======
+    m_ExpandedIDs: 00000000de440000
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1075,8 +1140,13 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+<<<<<<< Updated upstream
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000e042000016470000c0440000000000005c720000
+=======
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
