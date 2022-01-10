@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 3.unity
     guid: bd3546990359b764792de31bd853063c
   - enabled: 1
+    path: Assets/Scenes/Level 4.unity
+    guid: 5da32372c8936654db90c3e3c23494e5
+  - enabled: 1
     path: Assets/Scenes/RekenScene.unity
     guid: 2870d1bb36641f548b94d3b04ec332f8
   m_configObjects: {}
