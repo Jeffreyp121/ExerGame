@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class LevelSelector : MonoBehaviour
+public class LevelSelector : MonoBehaviour, I_SmartwallInteractable
 {
+    Button buton;
     public void Terug ()
     {
         SceneManager.LoadScene("MenuNew");
@@ -30,5 +32,9 @@ public class LevelSelector : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    
+    public void Hit(Vector3 location)
+    {
+        buton = gameObject.GetComponent<Button>();
+        buton.onClick.Invoke();
+    }
 }

@@ -2,34 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, I_SmartwallInteractable
 {
     public CharacterController2D controller;
     public float runSpeed =100f;
     float horizontalMove = 0f;
     bool jump = false;
-    private Vector2 target;
-    private Vector2 beginPos;
+    private Vector3 target;
+    private Vector3 beginPos;
     private bool moving = false;
 
 
     void Update()
     {
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-        if(Input.GetMouseButtonDown(0))
-        {
-            target = new Vector2(mousePos.x, mousePos.y);
-            moving = true;
-        }
-
         if (moving)
         {
             moving = MovingToTouch();
         }
+
        
-      
-        
+
+
         /*horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         if (Input.GetButtonDown("Jump"))
         {
@@ -45,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
             return false;
         }
 
-        transform.position = Vector2.MoveTowards(transform.position, target, Time.deltaTime * runSpeed);
+        transform.position = Vector3.MoveTowards(transform.position, target, Time.deltaTime * runSpeed);
         return true;
     }
     // Update is called once per frame
@@ -54,6 +47,12 @@ public class PlayerMovement : MonoBehaviour
         
         //transform.position = Vector2.MoveTowards(transform.position, target, Time.deltaTime * runSpeed);
         jump = false;
+    }
+
+    public void Hit(Vector3 location)
+    {
+        target = location;
+        moving = true;
     }
 
 
