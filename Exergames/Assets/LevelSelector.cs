@@ -10,6 +10,11 @@ public class LevelSelector : MonoBehaviour
         SceneManager.LoadScene("MenuNew");
     }
 
+    public void Level0()
+    {
+        SceneManager.LoadScene("Level 0 Tutorial");
+    }
+
     public void Level1 ()
     {
         SceneManager.LoadScene("Level 1");
@@ -23,6 +28,21 @@ public class LevelSelector : MonoBehaviour
     public void Level3 ()
     {
         SceneManager.LoadScene("Level 3");
+    }
+
+    public void Level4()
+    {
+        SceneManager.LoadScene("Level 4");
+    }
+
+    public void Level5()
+    {
+        SceneManager.LoadScene("Level 5");
+    }
+
+    public void Level6()
+    {
+        SceneManager.LoadScene("Level 6");
     }
 
     public void NextScene ()

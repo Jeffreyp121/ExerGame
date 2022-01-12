@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelKeuze.unity
     guid: 7517cbbacf371aa46abe225ade05b830
   - enabled: 1
+    path: Assets/Scenes/Level 0 Tutorial.unity
+    guid: 713ac38c1a21df744bf4754925e2ee9e
+  - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -23,6 +26,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 4.unity
     guid: 5da32372c8936654db90c3e3c23494e5
+  - enabled: 1
+    path: Assets/Scenes/Level 5.unity
+    guid: 3de11a7d87808744eb7fda706cfe72ca
+  - enabled: 1
+    path: Assets/Scenes/Level 6.unity
+    guid: 4c8028b72f41e2545b4ae45b33987782
   - enabled: 1
     path: Assets/Scenes/RekenScene.unity
     guid: 2870d1bb36641f548b94d3b04ec332f8
