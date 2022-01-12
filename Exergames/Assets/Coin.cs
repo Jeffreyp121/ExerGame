@@ -13,6 +13,7 @@ public class Coin : MonoBehaviour
         {
             Destroy(gameObject);
             ScoreManager.instance2.ChangeScore(coinValue);
+            characterVariables.instance.UpdateCoins(1);
             audioSource.Play();
         }
     }

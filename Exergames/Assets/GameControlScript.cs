@@ -7,14 +7,12 @@ public class GameControlScript : MonoBehaviour
 {
     public Scene scene;
     public GameObject heart1, heart2, heart3, gameOver;
-    public static int health;
     public float time;
 
     // Start is called before the first frame update
     void Start()
     {
         time = 2;
-        health = 3;
         heart1.gameObject.SetActive(true);
         heart2.gameObject.SetActive(true);
         heart3.gameObject.SetActive(true);
@@ -34,11 +32,11 @@ public class GameControlScript : MonoBehaviour
     void Update()
     {
         Debug.Log(time);
-        if (health > 3)
+        if (characterVariables.instance.health > 3)
         {
-            health = 3;
+            characterVariables.instance.health = 3;
         }
-        switch (health)
+        switch (characterVariables.instance.health)
         {
             case 3:
                 heart1.gameObject.SetActive(true);
@@ -66,6 +64,7 @@ public class GameControlScript : MonoBehaviour
                 {
                     Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
                     //time = 2;
+                    characterVariables.instance.health = 3;
                 }
 
                 break;
