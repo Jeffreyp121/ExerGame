@@ -34,7 +34,7 @@ public class SomGenerator : MonoBehaviour
     float[] xkeer = { 5, 4, 7, 6, 3, 8, 3, 9, 5, 6 };
     float[] ykeer = { 9, 50, 4, 40, 9, 60, 80, 30, 9, 7 };
 
-    int nrCorrect = 0;
+    public static int nrCorrect = 0;
     float correct = 0;
     bool answerCorrect = false;
 
