@@ -95,35 +95,43 @@ public class SomGenerator : MonoBehaviour
 
     void GenerateSom()
     {
+        int  i = 0;
         int j = Random.Range(0, 5); //Type som kiezen
+        switch(j){
+            case 0://Plussom
+                i = Random.Range(0, xplus.Length); //Random som kiezen
+                correct = xplus[i] + yplus[i];
+                somText.text = $"{xplus[i]} + {yplus[i]} =";
+            break;
 
-        if (j == 0) //Plussom
-        {
-            int i = Random.Range(0, xplus.Length); //Random som kiezen
-            correct = xplus[i] + yplus[i];
-            somText.text = $"{xplus[i]} + {yplus[i]} =";
-        } else if (j == 1) //Minsom
-        {
-            int i = Random.Range(0, xmin.Length); //Random som kiezen
-            correct = xmin[i] - ymin[i];
-            somText.text = $"{xmin[i]} - {ymin[i]} =";
-        } else if (j == 2) //keersom
-        {
-            int i = Random.Range(0, xkeer.Length); //Random som kiezen
-            correct = xkeer[i] * ykeer[i];
-            somText.text = $"{xkeer[i]} x {ykeer[i]} =";
-        } else if (j == 3) //plussom 2
-        {
-            int i = Random.Range(0, xplus_.Length); //Random som kiezen
-            correct =  yplus_[i] - xplus_[i];
-            somText.text = $"{xplus_[i]} + ..... = {yplus_[i]}";
-        } else if (j == 4) //minsom 2
-        {
-            int i = Random.Range(0, xmin_.Length); //Random som kiezen
-            correct = xmin_[i] - ymin_[i];
-            somText.text = $"{xmin_[i]} - ..... = {ymin_[i]}";
+            case 1: //Minsom
+                i = Random.Range(0, xmin.Length); //Random som kiezen
+                correct = xmin[i] - ymin[i];
+                somText.text = $"{xmin[i]} - {ymin[i]} =";
+            break;
+
+            case 2:// keersom
+                i = Random.Range(0, xkeer.Length); //Random som kiezen
+                correct = xkeer[i] * ykeer[i];
+                somText.text = $"{xkeer[i]} x {ykeer[i]} =";
+            break;
+
+            case 3:// plussom 2
+                i = Random.Range(0, xplus_.Length); //Random som kiezen
+                correct =  yplus_[i] - xplus_[i];
+                somText.text = $"{xplus_[i]} + ..... = {yplus_[i]}";
+            break;
+
+            case 4: //minsom2
+                i = Random.Range(0, xmin_.Length); //Random som kiezen
+                correct = xmin_[i] - ymin_[i];
+                somText.text = $"{xmin_[i]} - ..... = {ymin_[i]}";
+            break; 
+
+            default:
+            break;
         }
-
+        
         float wrong1 = correct + Random.Range(1, 10);
         float wrong2 = correct - Random.Range(1, 10);
 
