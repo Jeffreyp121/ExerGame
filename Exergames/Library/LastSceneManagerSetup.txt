@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Level 6.unity
+=======
+- path: Assets/Scenes/MenuNew.unity
+>>>>>>> StoreVaribles
   isLoaded: 1
   isActive: 1
   isSubScene: 0

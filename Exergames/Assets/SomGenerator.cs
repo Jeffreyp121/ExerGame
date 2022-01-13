@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class SomGenerator : MonoBehaviour
 {
@@ -47,6 +48,8 @@ public class SomGenerator : MonoBehaviour
     public AudioSource fout;
     public AudioSource goed;
 
+    public TextMeshProUGUI text;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,6 +62,7 @@ public class SomGenerator : MonoBehaviour
         Button btn3 = btnAnswer3.GetComponent<Button>();
         btn3.onClick.AddListener(TaskOnClick3);
         time = startTime;
+        text.text = characterVariables.instance.coins.ToString();
         GenerateSom();
 
     }
@@ -70,6 +74,8 @@ public class SomGenerator : MonoBehaviour
 
         if (nrCorrect == 5)
         {
+            characterVariables.instance.health= 3;
+            nrCorrect = 0;
             SceneManager.LoadScene("LevelKeuze");
         }
         if (answerCorrect || TimerElapsed()) 
@@ -167,6 +173,7 @@ public class SomGenerator : MonoBehaviour
         }
         else {
             Debug.Log("Wrong");
+            characterVariables.instance.UpdateHealth(1);
             fout.Play();
         }
     }

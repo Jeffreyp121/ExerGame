@@ -10,8 +10,10 @@ public class KillPlayer : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            if (GameControlScript.health > 0)
-            { GameControlScript.health -= 1; }
+            if(characterVariables.instance.health > 0)
+            {
+                characterVariables.instance.UpdateHealth(1);
+            }
            // HealthManager.instance1.ChangeHealth(GameControlScript.health);
         }
     }
