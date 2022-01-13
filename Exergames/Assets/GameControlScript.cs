@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameControlScript : MonoBehaviour
 {
     public Scene scene;
     public GameObject heart1, heart2, heart3, gameOver;
     public float time;
+    public TextMeshProUGUI text;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +33,7 @@ public class GameControlScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        text.text = characterVariables.instance.coins.ToString();
         Debug.Log(time);
         if (characterVariables.instance.health > 3)
         {

@@ -12,7 +12,6 @@ public class Coin : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
-            ScoreManager.instance2.ChangeScore(coinValue);
             characterVariables.instance.UpdateCoins(1);
             audioSource.Play();
         }

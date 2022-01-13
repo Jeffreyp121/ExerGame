@@ -2029,6 +2029,7 @@ MonoBehaviour:
   heart3: {fileID: 51969266}
   gameOver: {fileID: 224336750}
   time: 0
+  text: {fileID: 1736502524}
 --- !u!4 &1098312470
 Transform:
   m_ObjectHideFlags: 0

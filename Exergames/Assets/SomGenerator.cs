@@ -74,6 +74,8 @@ public class SomGenerator : MonoBehaviour
 
         if (nrCorrect == 5)
         {
+            characterVariables.instance.health= 3;
+            nrCorrect = 0;
             SceneManager.LoadScene("LevelKeuze");
         }
         if (answerCorrect || TimerElapsed()) 
@@ -171,6 +173,7 @@ public class SomGenerator : MonoBehaviour
         }
         else {
             Debug.Log("Wrong");
+            characterVariables.instance.UpdateHealth(1);
             fout.Play();
         }
     }
