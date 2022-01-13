@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class SomGenerator : MonoBehaviour
+public class SomGenerator : MonoBehaviour,I_SmartwallInteractable
 {
     public List<float> answers = new List<float>();
     public List<char> soms = new List<char>();
@@ -14,6 +14,7 @@ public class SomGenerator : MonoBehaviour
     public Text answer2;
     public Text answer3;
 
+    private Button button;
     public Button btnAnswer1;
     public Button btnAnswer2;
     public Button btnAnswer3;
@@ -137,25 +138,31 @@ public class SomGenerator : MonoBehaviour
         answers.RemoveAt((int)A);
     }
 
-    void TaskOnClick1()
+    public void TaskOnClick1()
     {
         CheckAnswer(answer1.text);
         Debug.Log("You have clicked 1 button!");
     }
 
-    void TaskOnClick2()
+    public void TaskOnClick2()
     {
         CheckAnswer(answer2.text);
         Debug.Log("You have clicked 2 button!");
     }
 
-    void TaskOnClick3()
+    public void TaskOnClick3()
     {
         CheckAnswer(answer3.text);
         Debug.Log("You have clicked 3 button!");
     }
 
-    void CheckAnswer(string text)
+    public void Hit(Vector3 location)
+    {
+        button = gameObject.GetComponent<Button>();
+        button.onClick.Invoke();
+    }
+
+    public void CheckAnswer(string text)
     {
         Debug.Log($" correct:{correct}  Guessed:{text}");
         if (correct == float.Parse(text))

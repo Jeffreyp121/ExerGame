@@ -695,6 +695,7 @@ GameObject:
   - component: {fileID: 348047583}
   - component: {fileID: 348047582}
   - component: {fileID: 348047581}
+  - component: {fileID: 348047585}
   m_Layer: 5
   m_Name: Level5Button
   m_TagString: Untagged
@@ -720,7 +721,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 161, y: 49}
+  m_AnchoredPosition: {x: 186, y: 33}
   m_SizeDelta: {x: 169.08, y: 172.61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &348047581
@@ -829,6 +830,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348047579}
   m_CullTransparentMesh: 1
+--- !u!61 &348047585
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348047579}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.22372437}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 169.50085, y: 172.78314}
+  m_EdgeRadius: 0
 --- !u!1 &449953577
 GameObject:
   m_ObjectHideFlags: 0
@@ -1366,6 +1393,7 @@ GameObject:
   - component: {fileID: 750229086}
   - component: {fileID: 750229085}
   - component: {fileID: 750229084}
+  - component: {fileID: 750229088}
   m_Layer: 5
   m_Name: Level3Button
   m_TagString: Untagged
@@ -1500,6 +1528,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750229082}
   m_CullTransparentMesh: 1
+--- !u!61 &750229088
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750229082}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.38725662, y: 0.007286072}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 168.78976, y: 173.57735}
+  m_EdgeRadius: 0
 --- !u!1 &780707161
 GameObject:
   m_ObjectHideFlags: 0
@@ -1750,6 +1804,7 @@ GameObject:
   - component: {fileID: 807077569}
   - component: {fileID: 807077568}
   - component: {fileID: 807077567}
+  - component: {fileID: 807077571}
   m_Layer: 5
   m_Name: Level2Button
   m_TagString: Untagged
@@ -1884,6 +1939,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 807077565}
   m_CullTransparentMesh: 1
+--- !u!61 &807077571
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807077565}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.07899475, y: 0.024555206}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 169.24435, y: 172.89319}
+  m_EdgeRadius: 0
 --- !u!1 &810561866
 GameObject:
   m_ObjectHideFlags: 0
@@ -2031,6 +2112,7 @@ GameObject:
   - component: {fileID: 882724893}
   - component: {fileID: 882724892}
   - component: {fileID: 882724891}
+  - component: {fileID: 882724895}
   m_Layer: 5
   m_Name: Level4Button
   m_TagString: Untagged
@@ -2165,6 +2247,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882724889}
   m_CullTransparentMesh: 1
+--- !u!61 &882724895
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882724889}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.000015258789, y: -0.12552261}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 170.4368, y: 170.6879}
+  m_EdgeRadius: 0
 --- !u!1 &915119625
 GameObject:
   m_ObjectHideFlags: 0
@@ -2752,6 +2860,7 @@ GameObject:
   - component: {fileID: 1085112261}
   - component: {fileID: 1085112260}
   - component: {fileID: 1085112259}
+  - component: {fileID: 1085112263}
   m_Layer: 5
   m_Name: Level6Button
   m_TagString: Untagged
@@ -2777,7 +2886,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -58.7, y: 78.5}
+  m_AnchoredPosition: {x: -57.8, y: 111.7}
   m_SizeDelta: {x: 169.08, y: 172.61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1085112259
@@ -2886,6 +2995,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1085112257}
   m_CullTransparentMesh: 1
+--- !u!61 &1085112263
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085112257}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.8973465, y: -0.45667267}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 169.70192, y: 174.17274}
+  m_EdgeRadius: 0
 --- !u!1 &1085641792
 GameObject:
   m_ObjectHideFlags: 0
@@ -3249,6 +3384,7 @@ GameObject:
   - component: {fileID: 1573258015}
   - component: {fileID: 1573258014}
   - component: {fileID: 1573258013}
+  - component: {fileID: 1573258017}
   m_Layer: 5
   m_Name: TerugKnop
   m_TagString: Untagged
@@ -3273,7 +3409,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 468, y: -302}
+  m_AnchoredPosition: {x: 472, y: -302}
   m_SizeDelta: {x: 355.18, y: 352.89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1573258013
@@ -3382,6 +3518,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1573258011}
   m_CullTransparentMesh: 1
+--- !u!61 &1573258017
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573258011}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.7623291, y: -0.37239075}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 353.45123, y: 354.19608}
+  m_EdgeRadius: 0
 --- !u!1 &1845759154
 GameObject:
   m_ObjectHideFlags: 0
@@ -3559,6 +3721,7 @@ GameObject:
   - component: {fileID: 2090833434}
   - component: {fileID: 2090833433}
   - component: {fileID: 2090833432}
+  - component: {fileID: 2090833436}
   m_Layer: 5
   m_Name: Level7Button
   m_TagString: Untagged
@@ -3584,7 +3747,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -205.3, y: 210.4}
+  m_AnchoredPosition: {x: -234.8, y: 181.7}
   m_SizeDelta: {x: 169.08, y: 172.61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2090833432
@@ -3693,6 +3856,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090833430}
   m_CullTransparentMesh: 1
+--- !u!61 &2090833436
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090833430}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.29644775, y: 0.29645538}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 167.60916, y: 173.53831}
+  m_EdgeRadius: 0
 --- !u!1 &2117685354
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class mainMenu : MonoBehaviour, I_SmartwallInteractable
 {
-    Button start;
+    Button button;
     public void PlayGame ()
     {
         SceneManager.LoadScene("LevelKeuze");
@@ -19,7 +19,7 @@ public class mainMenu : MonoBehaviour, I_SmartwallInteractable
 
     public void Hit(Vector3 location)
     {
-        start = gameObject.GetComponent<Button>();
-        start.onClick.Invoke();
+        button = gameObject.GetComponent<Button>();
+        button.onClick.Invoke();
     }
 }
