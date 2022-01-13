@@ -65,7 +65,12 @@ public class GameControlScript : MonoBehaviour
                 gameOver.gameObject.SetActive(true);
                 if (TimerElapsed())
                 {
+
                     Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+                    if(scene.name == "RekenScene")
+                    {
+                        SceneManager.LoadScene("LevelKeuze");
+                    }
                     //time = 2;
                     characterVariables.instance.health = 3;
                 }

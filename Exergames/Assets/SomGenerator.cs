@@ -63,6 +63,7 @@ public class SomGenerator : MonoBehaviour
         btn3.onClick.AddListener(TaskOnClick3);
         time = startTime;
         text.text = characterVariables.instance.coins.ToString();
+        nrCorrect = 0;
         GenerateSom();
 
     }
