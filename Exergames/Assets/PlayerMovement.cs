@@ -51,6 +51,8 @@ public class PlayerMovement : MonoBehaviour, I_SmartwallInteractable
 
     public void Hit(Vector3 location)
     {
+        if(moving) {return;}
+
         target = location;
         moving = true;
     }
