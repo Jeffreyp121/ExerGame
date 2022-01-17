@@ -15,9 +15,9 @@ public class SomGenerator : MonoBehaviour
     public Text answer2;
     public Text answer3;
 
-    public Button btnAnswer1;
-    public Button btnAnswer2;
-    public Button btnAnswer3;
+    public static Button btnAnswer1;
+    public static Button btnAnswer2;
+    public static Button btnAnswer3;
 
     //Sommen
     float[] xplus = { 98, 168, 170, 60, 205, 303, 224, 456, 444, 599, 672 }; //Eerste getal in de som
@@ -49,18 +49,18 @@ public class SomGenerator : MonoBehaviour
     public AudioSource goed;
 
     public TextMeshProUGUI text;
+    private Button button;
+    public static int id;
+    public static bool guess = false;
 
     // Start is called before the first frame update
     void Start()
     {
         Button btn1 = btnAnswer1.GetComponent<Button>();
-        btn1.onClick.AddListener(TaskOnClick1);
 
         Button btn2 = btnAnswer2.GetComponent<Button>();
-        btn2.onClick.AddListener(TaskOnClick2);
 
         Button btn3 = btnAnswer3.GetComponent<Button>();
-        btn3.onClick.AddListener(TaskOnClick3);
         time = startTime;
         text.text = characterVariables.instance.coins.ToString();
         nrCorrect = 0;
@@ -72,7 +72,7 @@ public class SomGenerator : MonoBehaviour
     void Update()
     {
         UpdateHealthBar();
-
+        HandleCLicks();
         if (nrCorrect == 5)
         {
             characterVariables.instance.health= 3;
@@ -84,6 +84,7 @@ public class SomGenerator : MonoBehaviour
             if (!answerCorrect)
             {
                 boem.Play();
+                characterVariables.instance.UpdateHealth(1);
             }
             time = startTime;
             answerCorrect = false;
@@ -152,12 +153,34 @@ public class SomGenerator : MonoBehaviour
         answers.RemoveAt((int)A);
     }
 
+    void HandleCLicks()
+    {
+        switch (id)
+        {
+            case 1:
+                CheckAnswer(answer1.text);
+            break;
+
+            case 2:
+                CheckAnswer(answer2.text);
+                break;
+
+            case 3:
+                CheckAnswer(answer3.text);
+                break;
+
+            default:
+                break;
+        }
+        id = 0;
+        guess = false;
+    }
+
     void TaskOnClick1()
     {
         CheckAnswer(answer1.text);
-        Debug.Log("You have clicked 1 button!");
+        Debug.Log("You have clicked 2 button!");
     }
-
     void TaskOnClick2()
     {
         CheckAnswer(answer2.text);
@@ -172,7 +195,7 @@ public class SomGenerator : MonoBehaviour
 
     void CheckAnswer(string text)
     {
-        Debug.Log($" correct:{correct}  Guessed:{text}");
+       
         if (correct == float.Parse(text))
         {
             Debug.Log("Good Job!");
@@ -198,4 +221,6 @@ public class SomGenerator : MonoBehaviour
     {
         healthBar.fillAmount = Mathf.Clamp(time / startTime, 0, 1f);
     }
+
+
 }

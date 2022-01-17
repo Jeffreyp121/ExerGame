@@ -5,6 +5,8 @@ using UnityEngine;
 public class CamMove : MonoBehaviour
 {
     public Transform target;
+    public static float x;
+    public static float y;
 
     void Update()
     {
