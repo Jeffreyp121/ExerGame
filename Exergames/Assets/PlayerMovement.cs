@@ -17,7 +17,8 @@ public class PlayerMovement : MonoBehaviour, I_SmartwallInteractable
     {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         beginPos = GameObject.FindGameObjectWithTag("Player").transform.position;
-        if (Input.GetMouseButtonDown(0))
+
+        if (Input.GetMouseButtonDown(0) && !moving)
         {
             target = new Vector3(mousePos.x, mousePos.y);
             moving = true;
@@ -25,7 +26,8 @@ public class PlayerMovement : MonoBehaviour, I_SmartwallInteractable
 
         if (moving)
         {
-            moving = MovingToTouch();
+            MovingToTouch();
+            StartCoroutine(delay());
         }
        
       
@@ -36,18 +38,21 @@ public class PlayerMovement : MonoBehaviour, I_SmartwallInteractable
             jump = true;
         }*/
     }
-    bool MovingToTouch()
+    IEnumerator delay(float time = 1f)
+    {
+        
+        yield return new WaitForSeconds(time);
+        moving = false;  
+    }
+
+    void MovingToTouch()
     {
         
         Debug.Log($"begin y : { beginPos.y} begin :x {beginPos.x} target y : {target.y}  target x : {target.x}");
-        if (beginPos.x == target.x && beginPos.y == target.y)
-        {
-            return true;
-        }
-
+    
         // transform.position = Vector2.MoveTowards(beginPos, target, Time.deltaTime * runSpeed);
-        GameObject.FindGameObjectWithTag("Player").transform.position = target; 
-        return false;
+        GameObject.FindGameObjectWithTag("Player").transform.position = target;
+        
     }
     // Update is called once per frame
     void FixedUpdate()
@@ -65,9 +70,6 @@ public class PlayerMovement : MonoBehaviour, I_SmartwallInteractable
         /*beginPos = GameObject.FindGameObjectWithTag("Player").transform.position;
         text.GetComponent<TMP_Text>().text = $"Begin x: {beginPos.x}  y: {beginPos.y} target: x: {target.x}  y:{target.y}";
         GameObject.FindGameObjectWithTag("Player").transform.position = location;*/
-
-
-
     }
 
 }
