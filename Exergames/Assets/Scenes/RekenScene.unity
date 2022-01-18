@@ -2510,6 +2510,9 @@ MonoBehaviour:
   answer1: {fileID: 451723192}
   answer2: {fileID: 1244675583}
   answer3: {fileID: 1868024583}
+  btnAnswer1: {fileID: 1632183486}
+  btnAnswer2: {fileID: 178653259}
+  btnAnswer3: {fileID: 548203572}
   healthBar: {fileID: 152835958}
   timer: {fileID: 260488700}
   boem: {fileID: 339631375}

@@ -15,9 +15,9 @@ public class SomGenerator : MonoBehaviour
     public Text answer2;
     public Text answer3;
 
-    public static Button btnAnswer1;
-    public static Button btnAnswer2;
-    public static Button btnAnswer3;
+    public  Button btnAnswer1;
+    public  Button btnAnswer2;
+    public  Button btnAnswer3;
 
     //Sommen
     float[] xplus = { 98, 168, 170, 60, 205, 303, 224, 456, 444, 599, 672 }; //Eerste getal in de som
@@ -39,7 +39,7 @@ public class SomGenerator : MonoBehaviour
     float correct = 0;
     bool answerCorrect = false;
 
-    float time = 0;
+    float time = 12;
     float startTime = 12; //Tijd voor een som
 
     public Image healthBar;
@@ -51,20 +51,20 @@ public class SomGenerator : MonoBehaviour
     public TextMeshProUGUI text;
     private Button button;
     public static int id;
-    public static bool guess = false;
 
     // Start is called before the first frame update
     void Start()
     {
+          
         Button btn1 = btnAnswer1.GetComponent<Button>();
 
         Button btn2 = btnAnswer2.GetComponent<Button>();
 
         Button btn3 = btnAnswer3.GetComponent<Button>();
-        time = startTime;
+        GenerateSom();
         text.text = characterVariables.instance.coins.ToString();
         nrCorrect = 0;
-        GenerateSom();
+      
 
     }
 
@@ -77,7 +77,10 @@ public class SomGenerator : MonoBehaviour
         {
             characterVariables.instance.health= 3;
             nrCorrect = 0;
+            characterVariables.instance.UpdateTotalCoins(characterVariables.instance.coins);
+            characterVariables.instance.coins = 0;
             SceneManager.LoadScene("LevelKeuze");
+            
         }
         if (answerCorrect || TimerElapsed()) 
         {
@@ -91,7 +94,8 @@ public class SomGenerator : MonoBehaviour
             GenerateSom();
             timer.Play();
         }
-        Debug.Log(time);
+        Debug.Log(correct);
+        //Debug.Log(time);
     }
 
     void GenerateSom()
@@ -130,6 +134,7 @@ public class SomGenerator : MonoBehaviour
             break; 
 
             default:
+                somText.text = "Hallo";
             break;
         }
         
@@ -159,6 +164,7 @@ public class SomGenerator : MonoBehaviour
         {
             case 1:
                 CheckAnswer(answer1.text);
+
             break;
 
             case 2:
@@ -173,25 +179,9 @@ public class SomGenerator : MonoBehaviour
                 break;
         }
         id = 0;
-        guess = false;
     }
 
-    void TaskOnClick1()
-    {
-        CheckAnswer(answer1.text);
-        Debug.Log("You have clicked 2 button!");
-    }
-    void TaskOnClick2()
-    {
-        CheckAnswer(answer2.text);
-        Debug.Log("You have clicked 2 button!");
-    }
-
-    void TaskOnClick3()
-    {
-        CheckAnswer(answer3.text);
-        Debug.Log("You have clicked 3 button!");
-    }
+ 
 
     void CheckAnswer(string text)
     {
@@ -208,6 +198,9 @@ public class SomGenerator : MonoBehaviour
             characterVariables.instance.UpdateHealth(1);
             fout.Play();
         }
+
+       
+
     }
 
     bool TimerElapsed()
