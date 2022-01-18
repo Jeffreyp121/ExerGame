@@ -46,6 +46,8 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    Unity.Timeline.Editor.dll:
+    - TimelineProjectSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -128,9 +130,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3506}
     - Class: 114
-      Script: {instanceID: 4790}
+      Script: {instanceID: 4792}
     - Class: 114
-      Script: {instanceID: 5488}
+      Script: {instanceID: 5490}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -225,9 +227,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3506}
     - Class: 114
-      Script: {instanceID: 4790}
+      Script: {instanceID: 4792}
     - Class: 114
-      Script: {instanceID: 5488}
+      Script: {instanceID: 5490}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -322,9 +324,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3506}
     - Class: 114
-      Script: {instanceID: 4790}
+      Script: {instanceID: 4792}
     - Class: 114
-      Script: {instanceID: 5488}
+      Script: {instanceID: 5490}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -419,9 +421,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3506}
     - Class: 114
-      Script: {instanceID: 4790}
+      Script: {instanceID: 4792}
     - Class: 114
-      Script: {instanceID: 5488}
+      Script: {instanceID: 5490}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -516,9 +518,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3506}
     - Class: 114
-      Script: {instanceID: 4790}
+      Script: {instanceID: 4792}
     - Class: 114
-      Script: {instanceID: 5488}
+      Script: {instanceID: 5490}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -613,9 +615,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3506}
     - Class: 114
-      Script: {instanceID: 4790}
+      Script: {instanceID: 4792}
     - Class: 114
-      Script: {instanceID: 5488}
+      Script: {instanceID: 5490}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -710,9 +712,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3506}
     - Class: 114
-      Script: {instanceID: 4790}
+      Script: {instanceID: 4792}
     - Class: 114
-      Script: {instanceID: 5488}
+      Script: {instanceID: 5490}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -781,9 +783,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3544}
     - Class: 114
-      Script: {instanceID: 4824}
+      Script: {instanceID: 4450}
     - Class: 114
-      Script: {instanceID: 33870}
+      Script: {instanceID: 4826}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -860,17 +862,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4358}
     - Class: 114
-      Script: {instanceID: 4824}
+      Script: {instanceID: 4826}
     - Class: 114
-      Script: {instanceID: 4890}
+      Script: {instanceID: 4892}
     - Class: 114
-      Script: {instanceID: 4992}
+      Script: {instanceID: 4994}
     - Class: 114
-      Script: {instanceID: 5152}
+      Script: {instanceID: 5154}
     - Class: 114
-      Script: {instanceID: 5400}
+      Script: {instanceID: 5402}
     - Class: 114
-      Script: {instanceID: 5574}
+      Script: {instanceID: 5576}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -941,9 +943,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4422}
     - Class: 114
-      Script: {instanceID: 4824}
+      Script: {instanceID: 4826}
     - Class: 114
-      Script: {instanceID: 32628}
+      Script: {instanceID: 34732}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1583,6 +1585,12 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
+      Hash: ee98729079998eb63435f99f41b30b9e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UpdateCoins
+  - hash:
+      serializedVersion: 2
       Hash: a1ca1237bad0f30ea5ba8f4060929114
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -1911,12 +1919,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TMP_TextEventCheck
-  - hash:
-      serializedVersion: 2
-      Hash: ee98729079998eb63435f99f41b30b9e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: UpdateCoins
   platform: 19
   scenePathNames:
   - Assets/Scenes/MenuNew.unity
