@@ -49,10 +49,10 @@ public class LevelSelector : MonoBehaviour, I_SmartwallInteractable
         SceneManager.LoadScene("Level 6");
     }
 
-    public void NextScene ()
+    /*public void NextScene ()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
+    }*/
 
     public void Hit(Vector3 location)
     {

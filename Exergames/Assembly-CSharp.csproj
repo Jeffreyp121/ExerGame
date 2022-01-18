@@ -94,6 +94,7 @@
      <Compile Include="Assets\SmartwallPackage\Utils\MainThreadDispatcher.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
      <Compile Include="Assets\SomGenerator.cs" />
+     <Compile Include="Assets\UpdateCoins.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
      <Compile Include="Assets\SmartwallPackage\Language\L_Sprite.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
