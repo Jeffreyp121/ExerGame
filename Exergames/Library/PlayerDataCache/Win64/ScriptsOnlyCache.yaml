@@ -46,8 +46,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    Unity.Timeline.Editor.dll:
-    - TimelineProjectSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -945,7 +943,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4826}
     - Class: 114
-      Script: {instanceID: 34732}
+      Script: {instanceID: 18130}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1931,4 +1929,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Level 5.unity
   - Assets/Scenes/Level 6.unity
   - Assets/Scenes/RekenScene.unity
-  playerPath: E:/hoop/Exergames.exe
+  playerPath: E:/Nieuwe/Exergames.exe
