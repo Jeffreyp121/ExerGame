@@ -21,12 +21,14 @@ ScriptsOnlyBuild:
     - PlayerMovement
     - SceneSwitcher
     - SomGenerator
+    - UpdateCoins
     - characterVariables
     - mainMenu
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -323,8 +325,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4790}
     - Class: 114
       Script: {instanceID: 5488}
-    - Class: 114
-      Script: {instanceID: 29876}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -422,8 +422,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4790}
     - Class: 114
       Script: {instanceID: 5488}
-    - Class: 114
-      Script: {instanceID: 29876}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -521,8 +519,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4790}
     - Class: 114
       Script: {instanceID: 5488}
-    - Class: 114
-      Script: {instanceID: 29876}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -620,8 +616,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4790}
     - Class: 114
       Script: {instanceID: 5488}
-    - Class: 114
-      Script: {instanceID: 29876}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -719,8 +713,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4790}
     - Class: 114
       Script: {instanceID: 5488}
-    - Class: 114
-      Script: {instanceID: 29876}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -790,6 +782,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3544}
     - Class: 114
       Script: {instanceID: 4824}
+    - Class: 114
+      Script: {instanceID: 33870}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -949,7 +943,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4824}
     - Class: 114
-      Script: {instanceID: 17938}
+      Script: {instanceID: 32628}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1271,7 +1265,7 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 097324052be0c1fabe14dbd8969264b7
+      Hash: 48e7f308381db73b040b2885dc87af34
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: characterVariables
@@ -1577,7 +1571,7 @@ ScriptsOnlyBuild:
     className: VertexShakeB
   - hash:
       serializedVersion: 2
-      Hash: c51cc032d787f60dd8bb4b8b04a5b282
+      Hash: 79811ba0bab76e4769c60479e19f1166
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SomGenerator
@@ -1917,6 +1911,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TMP_TextEventCheck
+  - hash:
+      serializedVersion: 2
+      Hash: ee98729079998eb63435f99f41b30b9e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UpdateCoins
   platform: 19
   scenePathNames:
   - Assets/Scenes/MenuNew.unity

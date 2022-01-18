@@ -72,6 +72,7 @@ public class GameControlScript : MonoBehaviour
                         SceneManager.LoadScene("LevelKeuze");
                     }
                     //time = 2;
+                    characterVariables.instance.coins = 0;
                     characterVariables.instance.health = 3;
                 }
 

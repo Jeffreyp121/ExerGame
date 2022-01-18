@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LevelSelector : MonoBehaviour, I_SmartwallInteractable
-{
+{ 
     private Button button;
+ 
+    
     public void Terug ()
     {
         SceneManager.LoadScene("MenuNew");

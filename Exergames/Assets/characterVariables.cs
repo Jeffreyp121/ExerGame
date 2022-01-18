@@ -8,6 +8,7 @@ public class characterVariables : MonoBehaviour
 
     public int coins =0;
     public int health =3;
+    public int totalCoins;
 
     void Awake()
     {
@@ -26,7 +27,11 @@ public class characterVariables : MonoBehaviour
     public void UpdateCoins(int value)
     {
         coins += value;
-        Debug.Log(coins);
+    }
+
+    public void UpdateTotalCoins(int value)
+    {
+        totalCoins += value;
     }
 
 }

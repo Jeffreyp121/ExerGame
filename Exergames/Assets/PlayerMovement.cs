@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour, I_SmartwallInteractable
         if (moving)
         {
             MovingToTouch();
-            StartCoroutine(delay());
+            StartCoroutine(delay(0.25f));
         }
        
       

@@ -77,7 +77,10 @@ public class SomGenerator : MonoBehaviour
         {
             characterVariables.instance.health= 3;
             nrCorrect = 0;
+            characterVariables.instance.UpdateTotalCoins(characterVariables.instance.coins);
+            characterVariables.instance.coins = 0;
             SceneManager.LoadScene("LevelKeuze");
+            
         }
         if (answerCorrect || TimerElapsed()) 
         {

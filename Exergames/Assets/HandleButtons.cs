@@ -11,26 +11,24 @@ public class HandleButtons : MonoBehaviour, I_SmartwallInteractable
 
     public void Btn1Clicked()
     {
-        StartCoroutine(delay(5));
+        
         SomGenerator.id = 1;   
     }
 
     public void Btn2Clicked()
     {
-        StartCoroutine(delay(5));
         SomGenerator.id = 2;
     }
 
     public void Btn3Clicked()
-    {
-        StartCoroutine(delay(5));
+    { 
         SomGenerator.id = 3;
     }
 
     IEnumerator delay(float time = 1f)
     {
         yield return new WaitForSeconds(time);
-        guess = true;
+        guess = false;
     }
     // Update is called once per frame
     void Update()
@@ -44,6 +42,7 @@ public class HandleButtons : MonoBehaviour, I_SmartwallInteractable
         button = gameObject.GetComponent<Button>();
         guess = true;
         button.onClick.Invoke();
+        StartCoroutine(delay(1));
     }
 
 
